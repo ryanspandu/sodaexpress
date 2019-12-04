@@ -1,0 +1,16 @@
+@layout('base/base')
+
+@section('main')
+<div id="notfound">
+    <div class="notfound">
+        <div class="notfound-404">
+            <h1>{{error.status}}</h1>
+            <h2>{{message}}</h2>
+            <p style="color: rgb(43, 42, 42);">{{error.stack}}</p>
+        </div>
+        <a href="/">Back to Home</a>
+    </div>
+</div>
+@endsection
+
+
