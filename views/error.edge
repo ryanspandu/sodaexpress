@@ -1,8 +1,11 @@
 @layout('base/base')
+@section('title')
+<title>Pesta Soda - {{ error.status }} {{ message }}</title>
+@endsection
 
 @section('main')
 <div id="notfound">
-    <div class="notfound">
+    <div class="notfound overflow-hidden">
         <div class="notfound-404">
             <h1>{{error.status}}</h1>
             <h2>{{message}}</h2>
